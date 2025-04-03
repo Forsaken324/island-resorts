@@ -16,7 +16,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Romantic Getaways",
             "Family-Friendly Packages"
         ],
-        image: "../../../../public/islandimages/image6.jpg"
+        image: "/islandimages/image6.jpg"
     },
     {
         category: "Custom Itineraries",
@@ -25,7 +25,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Island Hopping Tours",
             "Cultural Experiences"
         ],
-        image: "../../../../public/islandimages/itinerary.jpg"
+        image: "/islandimages/itinerary.jpg"
     },
     {
         category: "Accommodation Booking",
@@ -35,7 +35,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Eco-Friendly Stays",
             "Overwater Bungalows"
         ],
-        image: "../../../../public/islandimages/accomodation2.jpg"
+        image: "/islandimages/accomodation2.jpg"
     },
     {
         category: "Transport & Transfers",
@@ -45,7 +45,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Seaplane or Helicopter Transfers",
             "Car Rentals or Guided Transport"
         ],
-        image: "../../../../public/islandimages/transportation.jpg"
+        image: "/islandimages/transportation.jpg"
     },
     {
         category: "Exclusive Island Experiences",
@@ -56,7 +56,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Deep-Sea Fishing Trips",
             "Private Guided Island Tours"
         ],
-        image: "../../../../public/islandimages/scuba.jpg"
+        image: "/islandimages/scuba.jpg"
     },
     {
         category: "Adventure & Water Sports",
@@ -66,7 +66,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Scuba Diving with Certified Instructors",
             "Wildlife Encounters (Dolphins, Turtle Conservation)"
         ],
-        image: "../../../../public/islandimages/watersports.jpg"
+        image: "/islandimages/watersports.jpg"
     },
     {
         category: "Wellness & Relaxation",
@@ -76,7 +76,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Hot Springs or Volcanic Mud Baths",
             "Private Wellness Coaching"
         ],
-        image: "../../../../public/islandimages/relaxation.jpg"
+        image: "/islandimages/relaxation.jpg"
     },
     {
         category: "Destination Weddings & Events",
@@ -85,7 +85,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Vow Renewals and Anniversary Celebrations",
             "Bachelor/Bachelorette Island Getaways"
         ],
-        image: "../../../../public/islandimages/beachwedding.jpg"
+        image: "/islandimages/beachwedding.jpg"
     },
     {
         category: "Local Cultural & Culinary Tours",
@@ -94,7 +94,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Traditional Dance and Music Performances",
             "Visits to Historical Landmarks or Native Villages"
         ],
-        image: "../../../../public/islandimages/beachfood.jpg"
+        image: "/islandimages/beachfood.jpg"
     },
     {
         category: "VIP & Concierge Services",
@@ -103,7 +103,7 @@ export const islandTravelServices: TravelServiceCategory[] = [
             "Personal Butlers or Private Chefs",
             "Exclusive Access to Private Beaches or Events"
         ],
-        image: "../../../../public/islandimages/concierge.jpg"
+        image: "/islandimages/concierge.jpg"
     }
 ];
 
