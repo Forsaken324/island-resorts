@@ -15,13 +15,14 @@ const Contact = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
-        const numberRegex: RegExp = /^(\+234|0)(70|80|81|90|91|92|93|94|95|96|97|98|99)[0-9]{6}$/
+        const numberRegex: RegExp = /^(\+234|0)(70|80|81|90|91|92|93|94|95|96|97|98|99)[0-9]{8}$/
         if(phone.match(numberRegex))
         {
             setName("");
             setEmail("");
             setPhone("");
             setMessage("");
+            setValidPhone(true);
             window.alert("Your form has been submited sucessfully");
         }
         else
@@ -31,7 +32,7 @@ const Contact = () => {
     }
   return (
     <>
-      <section className="contact-us">
+      <section className="contact-us" id="contact-us">
         <div className="contact-header">
             <h2>Contact Us</h2>
         </div>
@@ -46,7 +47,7 @@ const Contact = () => {
                 <label htmlFor="email">Email</label><br />
                 <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)}/><br />
                 <label htmlFor="phoneno">Phone No.</label><br />
-                <input type="text" minLength={10} maxLength={11} value={phone} onChange={(e) => setPhone(e.target.value)}/><br />
+                <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)}/><br />
                 { validPhone ? "" : <p style={{
                     fontSize: "12px",
                     color: "red",

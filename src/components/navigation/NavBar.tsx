@@ -30,10 +30,10 @@ const NavBar = () => {
           </div>
 
           <ul>
-            <li><a className="nav-links-a" href="">Home</a></li>
-            <li><a className="nav-links-a" href="">Our Services</a></li>
-            <li><a className="nav-links-a" href="">About Us</a></li>
-            <li><a className="nav-links-a" href="">Contact Us</a></li>
+            <li><a className="nav-links-a" href="#home">Home</a></li>
+            <li><a className="nav-links-a" href="#our-services">Our Services</a></li>
+            <li><a className="nav-links-a" href="#about-us">About Us</a></li>
+            <li><a className="nav-links-a" href="#contact-us">Contact Us</a></li>
           </ul>
         </div>
 

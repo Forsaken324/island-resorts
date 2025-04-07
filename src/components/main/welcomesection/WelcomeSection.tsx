@@ -3,7 +3,7 @@ import "./welcome.css";
 const WelcomeSection = () => {
     return (
         <>
-            <section className="welcome-section">
+            <section className="welcome-section" id="home">
                 <div className="welcome-msg">
                     <h2>Welcome to Island Resorts</h2>
                     <p>Where peace and tranquility is inevitable</p>
