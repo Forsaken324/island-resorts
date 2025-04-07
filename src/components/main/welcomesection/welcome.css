@@ -6,7 +6,7 @@
     text-align: center; /* Ensures text is centered */
     height: 700px;
     position: relative;
-    background: url("islandimages/image1.jpg");
+    background: url("/islandimages/image1.jpg");
     background-size: cover;
     background-position: center;
     color: white;
