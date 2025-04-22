@@ -18,6 +18,7 @@
 .nav-links {
   display: flex;
   position: relative;
+  
 }
 
 .nav-links ul {
@@ -106,7 +107,8 @@
   }
 
   .nav-links li a {
-    margin: 10px 0;
+    margin: 10px;
+    
   }
 
   .hamburger-icon {
@@ -122,5 +124,10 @@
     cursor: pointer;
     color: white;
     z-index: 30; /* Ensure the close icon is above the menu content */
+  }
+
+  .login-or-profile button
+  {
+    margin-top: 10px;
   }
 }

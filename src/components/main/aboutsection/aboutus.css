@@ -1,6 +1,8 @@
 .about-us
 {
     padding: 30px;
+    background: #2c2c2c;
+    color: white;
 
 }
 
@@ -8,7 +10,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    
+}
+
+.head-section h3
+{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 30px;
 }
 
 .about-text

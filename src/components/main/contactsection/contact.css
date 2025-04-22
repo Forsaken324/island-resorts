@@ -1,57 +1,126 @@
-.contact-us
-{
-    background: #2C2C2C;
-    color: white;
+.contact-us {
+  /* background: #2C2C2C; */
+  background: #fff;
+  color: black;
+  padding: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.form-and-message
+.form-message
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Spacing between grid items */
+  padding: 20px;
+  margin: 20px;
+}
+
+.form-and-message {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  margin: 20px;
+}
+
+.contact-header h2 {
+  text-align: center;
+  color: #BDBDBD;
+  font-size: 50px;
+  font-weight: 100;
+
+  padding: 30px;
+}
+
+.form-section input {
+  border-radius: 5px;
+  padding-left: 30px;
+  width: 391px;
+  height: 46px;
+  border: none;
+  outline: none;
+  background: #f3f3f3;
+}
+
+.form-section textarea {
+  outline: none;
+  width: 391px;
+  height: 147px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background: #f3f3f3;
+}
+
+.form-section button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 71px;
+  width: 222px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background: #333333;
+}
+
+.contact-image
+{
+  width: 70%;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+@media (max-width: 1024px)
+{
+  .contact-image
+  {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-and-message {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-section
+  {
+    margin-top: 20px;
     padding: 20px;
-    justify-content: center;
-}
+  }
 
-.message
-{
-    width: 50%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-header
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.form-section input
-{
+  .form-section input {
     border-radius: 5px;
-    padding: 10px;
+    padding-left: 30px;
+    width: 300px;
+    height: 46px;
     border: none;
     outline: none;
-}
+    background: #f3f3f3;
+  }
 
-.form-section textarea
-{
+  .form-section textarea {
     outline: none;
+    width: 300px;
+    height: 147px;
     border-radius: 5px;
     border: none;
     padding: 10px;
-}
+    background: #f3f3f3;
+  }
 
-.form-section button
-{
-    height: 30px;
-    width: 90px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    background: black;
+  .contact-image
+  {
+    height: 50%;
+    width: 90%;
+    padding-left: 30px;
+    
+    
+  }
+
+  .form-section button {
+    height: 60px;
+    margin-top: 20px;
+  }
+
+
 }

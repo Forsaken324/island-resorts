@@ -9,6 +9,14 @@
     font-size: 15px;
 }
 
+.headersection h2
+{
+  text-align: center;
+  color: #BDBDBD;
+  font-size: 50px;
+  font-weight: 100;
+}
+
 /* card stuff */
 .service-section {
     display: grid;

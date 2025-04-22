@@ -10,11 +10,13 @@ import AboutUs from "./components/main/aboutsection/AboutUs";
 import Contact from "./components/main/contactsection/Contact";
 import Footer from "./components/main/footersection/Footer";
 
-
+// contexts
+import { MenuContextProvider } from "./contexts/MenuContextFile";
 
 const App = () => {
-    return (
-      <>
+  return (
+    <>
+      <MenuContextProvider>
         <NavBar />
         <WelcomeSection />
         <ServicesSection />
@@ -22,8 +24,9 @@ const App = () => {
         <AboutUs />
         <Contact />
         <Footer />
-      </>
-    )
-  }
-  
+      </MenuContextProvider>
+    </>
+  );
+};
+
 export default App;

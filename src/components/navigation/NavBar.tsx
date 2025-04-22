@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/gi"; // Hamburger icon
 import { AiOutlineClose } from "react-icons/ai"; // Close icon
 import "./navbar.css";
 
+import { MenuContext } from "../../contexts/MenuContextFile";
+
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+
+  const context = useContext(MenuContext);
+
+  if (!context) {
+      // handle the case — throw, return null, etc.
+      throw new Error("MenuContext must be used within a MenuContextProvider");
+  }
+
+
+  const {menuOpen, setMenuOpen} = context;
+  
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -30,16 +42,40 @@ const NavBar = () => {
           </div>
 
           <ul>
-            <li><a className="nav-links-a" href="#home">Home</a></li>
-            <li><a className="nav-links-a" href="#our-services">Our Services</a></li>
-            <li><a className="nav-links-a" href="#about-us">About Us</a></li>
-            <li><a className="nav-links-a" href="#contact-us">Contact Us</a></li>
+            <li>
+              <a className="nav-links-a" href="#home" onClick={toggleMenu}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                className="nav-links-a"
+                href="#our-services"
+                onClick={toggleMenu}
+              >
+                Our Services
+              </a>
+            </li>
+            <li>
+              <a className="nav-links-a" href="#about-us" onClick={toggleMenu}>
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                className="nav-links-a"
+                href="#contact-us"
+                onClick={toggleMenu}
+              >
+                Contact Us
+              </a>
+            </li>
           </ul>
-        </div>
 
-        {/* Login/Profile button */}
-        <div className="login-or-profile">
-          <button>Login</button>
+          {/* Login/Profile button */}
+          <div className="login-or-profile">
+            <button>Login</button>
+          </div>
         </div>
       </nav>
     </>
